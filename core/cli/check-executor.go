@@ -142,13 +142,9 @@ func CmdGenerate(args []string) {
 				fmt.Println("Unknown option")
 			}
 		} else if len(args[i]) > 2 {
-
 			// handle multiple parameters
 			param := strings.Trim(args[i], "-")
-
 			params := strings.Split(param, "")
-
-			fmt.Println(params)
 
 			for j := 0; j < len(params); j += 1 {
 				switch params[j] {
